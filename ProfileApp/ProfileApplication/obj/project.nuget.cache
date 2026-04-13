@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "FuGS4CHbU6M=",
+  "success": true,
+  "projectFilePath": "/Users/itdev-mac01/ProfileApp/ProfileApplication/ProfileApplication.csproj",
+  "expectedPackageFiles": [
+    "/Users/itdev-mac01/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
+    "/Users/itdev-mac01/.nuget/packages/fluentvalidation/10.0.0/fluentvalidation.10.0.0.nupkg.sha512",
+    "/Users/itdev-mac01/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/Users/itdev-mac01/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "/Users/itdev-mac01/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'AutoMapper' 13.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
+      "projectPath": "/Users/itdev-mac01/ProfileApp/ProfileApplication/ProfileApplication.csproj",
+      "warningLevel": 1,
+      "filePath": "/Users/itdev-mac01/ProfileApp/ProfileApplication/ProfileApplication.csproj",
+      "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}

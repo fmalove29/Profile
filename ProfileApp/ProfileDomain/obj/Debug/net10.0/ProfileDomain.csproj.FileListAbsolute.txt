@@ -1,0 +1,12 @@
+/Users/itdev-mac01/ProfileApp/ProfileDomain/bin/Debug/net10.0/ProfileDomain.deps.json
+/Users/itdev-mac01/ProfileApp/ProfileDomain/bin/Debug/net10.0/ProfileDomain.dll
+/Users/itdev-mac01/ProfileApp/ProfileDomain/bin/Debug/net10.0/ProfileDomain.pdb
+/Users/itdev-mac01/ProfileApp/ProfileDomain/obj/Debug/net10.0/ProfileDomain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/itdev-mac01/ProfileApp/ProfileDomain/obj/Debug/net10.0/ProfileDomain.AssemblyInfoInputs.cache
+/Users/itdev-mac01/ProfileApp/ProfileDomain/obj/Debug/net10.0/ProfileDomain.AssemblyInfo.cs
+/Users/itdev-mac01/ProfileApp/ProfileDomain/obj/Debug/net10.0/ProfileDomain.csproj.CoreCompileInputs.cache
+/Users/itdev-mac01/ProfileApp/ProfileDomain/obj/Debug/net10.0/ProfileDomain.sourcelink.json
+/Users/itdev-mac01/ProfileApp/ProfileDomain/obj/Debug/net10.0/ProfileDomain.dll
+/Users/itdev-mac01/ProfileApp/ProfileDomain/obj/Debug/net10.0/refint/ProfileDomain.dll
+/Users/itdev-mac01/ProfileApp/ProfileDomain/obj/Debug/net10.0/ProfileDomain.pdb
+/Users/itdev-mac01/ProfileApp/ProfileDomain/obj/Debug/net10.0/ref/ProfileDomain.dll
