@@ -37,4 +37,6 @@ public class Repository<T> : IRepository<T> where T : BaseEntity
         _context.Entry(entity).State = EntityState.Modified;
         return Task.FromResult(entity);
     }
+    public async Task<bool> SaveChangesAsync(Guid userId)
+        => await _context.SaveChangesAsync(userId) > 0;
 }
