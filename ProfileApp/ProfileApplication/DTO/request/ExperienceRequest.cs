@@ -2,7 +2,6 @@ namespace ProfileApplication.DTO.request;
 
 public class ExperienceRequest : BaseRequest
 {
-    public Guid ProfileId { get; set; }
 
     public string Company { get; set; } = string.Empty;
     public string Position { get; set; } = string.Empty;
@@ -14,5 +13,4 @@ public class ExperienceRequest : BaseRequest
 
     public bool IsCurrent { get; set; }
 
-    public ProfileRequest? Profile { get; set; }
 }

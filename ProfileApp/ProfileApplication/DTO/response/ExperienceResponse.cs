@@ -14,5 +14,5 @@ public class ExperienceResponse : BaseResponse
 
     public bool IsCurrent { get; set; }
 
-    public ProfileResponse? Profile { get; set; }
+    // public ProfileResponse? Profile { get; set; }
 }

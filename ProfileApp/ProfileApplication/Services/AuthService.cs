@@ -48,4 +48,9 @@ public class AuthService : IAuthService
 
         return token;
     }
+
+    public async Task<string> GetUserIdByEmail(string email)
+    {
+        return await _authRepository.GetUserIdByEmail(email);
+    }
 }

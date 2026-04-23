@@ -7,5 +7,5 @@ public class SkillResponse : BaseResponse
     public string Name { get; set; } = string.Empty;
     public int Level { get; set; }
 
-    public ProfileResponse? Profile { get; set; }
+    // public ProfileResponse? Profile { get; set; }
 }

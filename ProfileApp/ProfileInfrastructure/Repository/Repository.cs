@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
 using ProfileInfrastructure.DataContext;
 using ProfileDomain.Models;
+using ProfileDomain.Models;
 
 namespace ProfileInfrastructure.Repository;
 
@@ -32,11 +33,28 @@ public class Repository<T> : IRepository<T> where T : BaseEntity
     public Task<T> Delete(T entity)
         => Task.FromResult(_entities.Remove(entity).Entity);
 
-    public Task<T> Update(T entity)
+    public async Task<T> Update(T entity)
     {
-        _context.Entry(entity).State = EntityState.Modified;
-        return Task.FromResult(entity);
+        var d = _context.Entry(entity);
+        d.State = EntityState.Modified;
+        return d.Entity;
     }
+
     public async Task<bool> SaveChangesAsync(Guid userId)
         => await _context.SaveChangesAsync(userId) > 0;
+
+    public async Task<T> FindByConditionAsync(Expression<Func<T, bool>> predicate)
+        => await _context.Set<T>().FirstOrDefaultAsync(predicate);
+
+
+    public async Task<Profile> GetByIdWithConditionAsync(string Id)
+        => await _context.Profiles
+                .Include(p => p.Projects)
+                .Include(p => p.Skills)
+                .Include(p => p.Educations)
+                .Include(p => p.Experiences)
+                .Include(p => p.SocialLinks)
+                .Include(p => p.Certifications)
+                .FirstOrDefaultAsync(p => p.UserId == Id);
+
 }

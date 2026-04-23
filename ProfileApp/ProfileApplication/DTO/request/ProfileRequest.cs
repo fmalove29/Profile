@@ -15,10 +15,10 @@ public class ProfileRequest : BaseRequest
 
     public string ResumeUrl { get; set; } = string.Empty;
 
-    public ICollection<SkillRequest> Skills { get; set; }
-    public ICollection<ExperienceRequest> Experiences { get; set; }
-    public ICollection<ProjectRequest> Projects { get; set; }
-    public ICollection<EducationRequest> Educations { get; set; }
-    public ICollection<SocialLinkRequest> SocialLinks { get; set; }
-    public ICollection<CertificationRequest> Certifications { get; set; }
+    public ICollection<SkillRequest>? Skills { get; set; }
+    public ICollection<ExperienceRequest>? Experiences { get; set; }
+    public ICollection<ProjectRequest>? Projects { get; set; }
+    public ICollection<EducationRequest>? Educations { get; set; }
+    public ICollection<SocialLinkRequest>? SocialLinks { get; set; }
+    public ICollection<CertificationRequest>? Certifications { get; set; }
 }

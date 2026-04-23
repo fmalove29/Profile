@@ -110,4 +110,10 @@ public class AuthRepository : IAuthRepository
 
         return new JwtSecurityTokenHandler().WriteToken(token);
     }
+
+    public async Task<string> GetUserIdByEmail(string email)
+    {
+        var user = await _userManager.FindByEmailAsync(email);
+        return user.Id;
+    }
 }

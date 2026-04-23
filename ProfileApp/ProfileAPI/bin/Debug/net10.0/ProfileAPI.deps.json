@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v10.0": {
       "ProfileAPI/1.0.0": {
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "10.0.0",
           "Microsoft.AspNetCore.OpenApi": "10.0.0",

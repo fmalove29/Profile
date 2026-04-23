@@ -15,10 +15,10 @@ public class ProfileResponse : BaseResponse
 
     public string ResumeUrl { get; set; } = string.Empty;
 
-    public ICollection<SkillResponse> Skills { get; set; }
-    public ICollection<ExperienceResponse> Experiences { get; set; }
-    public ICollection<ProjectResponse> Projects { get; set; }
-    public ICollection<EducationResponse> Educations { get; set; }
-    public ICollection<SocialLinkResponse> SocialLinks { get; set; }
-    public ICollection<CertificationResponse> Certifications { get; set; }
+    public ICollection<SkillResponse>? Skills { get; set; }
+    public ICollection<ExperienceResponse>? Experiences { get; set; }
+    public ICollection<ProjectResponse>? Projects { get; set; }
+    public ICollection<EducationResponse>? Educations { get; set; }
+    public ICollection<SocialLinkResponse>? SocialLinks { get; set; }
+    public ICollection<CertificationResponse>? Certifications { get; set; }
 }

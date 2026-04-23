@@ -10,5 +10,5 @@ public class EducationResponse : BaseResponse
     public DateTime StartDate { get; set; }
     public DateTime? EndDate { get; set; }
 
-    public ProfileResponse? Profile { get; set; }
+    // public ProfileResponse? Profile { get; set; }
 }

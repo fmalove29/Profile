@@ -11,5 +11,5 @@ public class ProjectResponse : BaseResponse
     public string ProjectUrl { get; set; } = string.Empty;
     public string GithubUrl { get; set; } = string.Empty;
 
-    public ProfileResponse? Profile { get; set; }
+    // public ProfileResponse? Profile { get; set; }
 }

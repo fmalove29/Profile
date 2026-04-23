@@ -8,4 +8,6 @@ public interface IAuthRepository
     public Task<string> CreateToken(JwtRequest jwtRequest);
 
     public Task<LoginResponse> Login(LoginRequest loginRequest);
+
+    public Task<string> GetUserIdByEmail(string Email);
 }
