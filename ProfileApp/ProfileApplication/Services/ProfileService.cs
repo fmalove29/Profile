@@ -53,11 +53,11 @@ public class ProfileService : IProfileService
         return _mapper.Map<ProfileResponse>(entity);
     }
 
-    public async Task<ProfileResponse> FindByIdWithConditionAsync(string Id)
+    public async Task<DomainProfile> FindByIdWithConditionAsync(string Id)
     {
         var profile = await _profileRepository.GetByIdWithConditionAsync(Id);
 
-        return _mapper.Map<ProfileResponse>(profile);
+        return profile;
     }
 
 }

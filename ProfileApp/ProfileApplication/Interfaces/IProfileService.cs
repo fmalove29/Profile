@@ -16,5 +16,5 @@ public interface IProfileService
     Task<ProfileResponse> Update(Profile profile);
     Task<bool> SaveChangesAsync(Guid UserId);
     Task<ProfileResponse> FindProfileById(Guid profileId);
-    Task<ProfileResponse> FindByIdWithConditionAsync(string Id);
+    Task<DomainProfile> FindByIdWithConditionAsync(string Id);
 }

@@ -163,6 +163,7 @@ public static class ProfileExtension
             .Select(x => new SkillResponse
             {
                 Id = x.Id,
+                ProfileId = x.ProfileId,
                 Name = x.Name,
                 Level = x.Level
             }).ToList() ?? new List<SkillResponse>(),
@@ -171,6 +172,7 @@ public static class ProfileExtension
             .Select(x => new ExperienceResponse
             {
                 Id = x.Id,
+                ProfileId = x.ProfileId,
                 Company = x.Company,
                 Position = x.Position,
                 StartDate = x.StartDate,
@@ -181,6 +183,7 @@ public static class ProfileExtension
             .Select(x => new ProjectResponse
             {
                 Id = x.Id,
+                ProfileId = x.ProfileId,
                 Title = x.Title,
                 Description = x.Description
             }).ToList() ?? new List<ProjectResponse>(),
@@ -189,6 +192,7 @@ public static class ProfileExtension
             .Select(x => new EducationResponse
             {
                 Id = x.Id,
+                ProfileId = x.ProfileId,
                 School = x.School,
                 Degree = x.Degree
             }).ToList() ?? new List<EducationResponse>(),
@@ -197,6 +201,7 @@ public static class ProfileExtension
             .Select(x => new SocialLinkResponse
             {
                 Id = x.Id,
+                ProfileId = x.ProfileId,
                 Platform = x.Platform,
                 Url = x.Url
             }).ToList() ?? new List<SocialLinkResponse>(),
@@ -204,6 +209,8 @@ public static class ProfileExtension
         Certifications = profile.Certifications?
             .Select(x => new CertificationResponse
             {
+                Id = x.Id,
+                ProfileId = x.ProfileId,
                 CredentialUrl = x.CredentialUrl
             }).ToList() ?? new List<CertificationResponse>()
     };
