@@ -12,7 +12,7 @@ using ProfileInfrastructure.DataContext;
 namespace ProfileInfrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20260407032309_InitialCreate")]
+    [Migration("20260508034322_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -497,11 +497,6 @@ namespace ProfileInfrastructure.Migrations
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
 
-                    b.Property<Guid?>("ProfileId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasIndex("ProfileId");
-
                     b.HasDiscriminator().HasValue("ApplicationUser");
                 });
 
@@ -627,15 +622,6 @@ namespace ProfileInfrastructure.Migrations
                         .HasForeignKey("ProfileId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Profile");
-                });
-
-            modelBuilder.Entity("ProfileInfrastructure.ApplicationUser", b =>
-                {
-                    b.HasOne("ProfileDomain.Models.Profile", "Profile")
-                        .WithMany()
-                        .HasForeignKey("ProfileId");
 
                     b.Navigation("Profile");
                 });

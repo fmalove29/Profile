@@ -263,6 +263,8 @@ namespace MyApp.Namespace
 
             var profile = await _profileService.FindByIdWithConditionAsync(userId);
 
+           
+
             return Ok(profile.ToProfileResponse());
         }
     }

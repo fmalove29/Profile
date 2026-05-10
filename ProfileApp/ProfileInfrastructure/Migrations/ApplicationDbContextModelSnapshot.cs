@@ -494,11 +494,6 @@ namespace ProfileInfrastructure.Migrations
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
 
-                    b.Property<Guid?>("ProfileId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasIndex("ProfileId");
-
                     b.HasDiscriminator().HasValue("ApplicationUser");
                 });
 
@@ -624,15 +619,6 @@ namespace ProfileInfrastructure.Migrations
                         .HasForeignKey("ProfileId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Profile");
-                });
-
-            modelBuilder.Entity("ProfileInfrastructure.ApplicationUser", b =>
-                {
-                    b.HasOne("ProfileDomain.Models.Profile", "Profile")
-                        .WithMany()
-                        .HasForeignKey("ProfileId");
 
                     b.Navigation("Profile");
                 });

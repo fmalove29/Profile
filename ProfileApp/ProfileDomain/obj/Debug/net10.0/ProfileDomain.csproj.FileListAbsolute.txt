@@ -10,3 +10,15 @@
 /Users/itdev-mac01/ProfileApp/ProfileDomain/obj/Debug/net10.0/refint/ProfileDomain.dll
 /Users/itdev-mac01/ProfileApp/ProfileDomain/obj/Debug/net10.0/ProfileDomain.pdb
 /Users/itdev-mac01/ProfileApp/ProfileDomain/obj/Debug/net10.0/ref/ProfileDomain.dll
+C:\Users\evand\source\repos\Profile\ProfileApp\ProfileDomain\bin\Debug\net10.0\ProfileDomain.deps.json
+C:\Users\evand\source\repos\Profile\ProfileApp\ProfileDomain\bin\Debug\net10.0\ProfileDomain.dll
+C:\Users\evand\source\repos\Profile\ProfileApp\ProfileDomain\bin\Debug\net10.0\ProfileDomain.pdb
+C:\Users\evand\source\repos\Profile\ProfileApp\ProfileDomain\obj\Debug\net10.0\ProfileDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\evand\source\repos\Profile\ProfileApp\ProfileDomain\obj\Debug\net10.0\ProfileDomain.AssemblyInfoInputs.cache
+C:\Users\evand\source\repos\Profile\ProfileApp\ProfileDomain\obj\Debug\net10.0\ProfileDomain.AssemblyInfo.cs
+C:\Users\evand\source\repos\Profile\ProfileApp\ProfileDomain\obj\Debug\net10.0\ProfileDomain.csproj.CoreCompileInputs.cache
+C:\Users\evand\source\repos\Profile\ProfileApp\ProfileDomain\obj\Debug\net10.0\ProfileDomain.sourcelink.json
+C:\Users\evand\source\repos\Profile\ProfileApp\ProfileDomain\obj\Debug\net10.0\ProfileDomain.dll
+C:\Users\evand\source\repos\Profile\ProfileApp\ProfileDomain\obj\Debug\net10.0\refint\ProfileDomain.dll
+C:\Users\evand\source\repos\Profile\ProfileApp\ProfileDomain\obj\Debug\net10.0\ProfileDomain.pdb
+C:\Users\evand\source\repos\Profile\ProfileApp\ProfileDomain\obj\Debug\net10.0\ref\ProfileDomain.dll
