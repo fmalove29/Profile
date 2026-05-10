@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+  </Folder>
   <Project Path="ProfileAPI/ProfileAPI.csproj" />
   <Project Path="ProfileApplication/ProfileApplication.csproj" />
   <Project Path="ProfileDomain/ProfileDomain.csproj" />
